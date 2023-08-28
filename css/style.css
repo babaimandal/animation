@@ -1,0 +1,91 @@
+*,
+*::after,
+*::beofre{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+
+
+	background-color: #90887B;
+}
+
+/*  *********************  */
+.animation-ground{
+	
+}
+.animation-ground .zoombie-child-image img{
+	width: 200px;
+    height: auto;
+    position: absolute;
+    top: 500px;
+   	left: -250px;
+
+	
+}
+
+.animation-ground .town-image img{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.animation-ground .zoombie-car-hulk-image img{
+	width: 300px;
+    height: auto;
+    position: absolute;
+   	bottom: 10%;
+    right: -145%;
+    
+    
+}
+.zoombie-child-image{
+	animation: zoombie-movement 10.1s linear;
+
+}
+.zoombie-car-hulk-image{
+	animation: hulk-entry  25.1s linear;
+}
+.child-image{
+	/*animation: child-movement 7.4s linear;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes zoombie-movement{
+	0%{
+		transform: translateX(0);
+	}
+
+	100%{
+		transform: translateX(1785px);
+	}
+}
+
+
+@keyframes hulk-entry{
+	0%{
+		transform: translateX(0);
+	}
+
+	100%{
+		transform: translateX(-4500px);
+	}
+}
+
